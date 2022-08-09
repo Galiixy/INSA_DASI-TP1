@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="spiritus" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.mycompany.spiritus.metier.model.Astrologue</class>
+    <class>com.mycompany.spiritus.metier.model.Cartomancien</class>
+    <class>com.mycompany.spiritus.metier.model.Client</class>
+    <class>com.mycompany.spiritus.metier.model.Consultation</class>
+    <class>com.mycompany.spiritus.metier.model.Employee</class>
+    <class>com.mycompany.spiritus.metier.model.Medium</class>
+    <class>com.mycompany.spiritus.metier.model.Person</class>
+    <class>com.mycompany.spiritus.metier.model.Spirite</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/spiritus"/>
+      <property name="javax.persistence.jdbc.user" value="spiritus"/>
+      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+      <property name="javax.persistence.jdbc.password" value="spiritus"/>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+    </properties>
+  </persistence-unit>
+  <persistence-unit name="spiritus" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/spiritus"/>
+      <property name="javax.persistence.jdbc.user" value="spiritus"/>
+      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.ClientDriver"/>
+      <property name="javax.persistence.jdbc.password" value="spiritus"/>
+      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
